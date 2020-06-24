@@ -7,12 +7,12 @@ class Column extends React.Component {
     }
     render() {
         const { name, items } = this.props;
-        return (<div>
+        return (<table>
             <th>{name}</th>
             {items.map(item => {
                 return <Cell key={item.id} value={item[name]} />
             })}
-        </div>)
+        </table>)
     }
 }
 export default Column;
